@@ -1,0 +1,122 @@
+/* Font e colori di base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #1f1f1f, #000000);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #e50914;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #e50914;
+}
+
+/* Main layout */
+main {
+  padding: 30px 20px;
+}
+
+/* Sezioni */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  border-left: 5px solid #e50914;
+  padding-left: 10px;
+  color: #e50914;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b0060f;
+}
+
+/* Risultati film */
+#movie, #series {
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+}
+
+#movie img, #series img {
+  max-width: 200px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#movie h2, #series h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+#movie p, #series p {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  color: #bbbbbb;
+  text-align: center;
+  border-top: 2px solid #e50914;
+}
+
+footer a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #movie img, #series img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
