@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Library</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="myscripts.js"></script>
+    <script src="myscripts.js" defer></script> <!-- Usa defer per caricare lo script dopo l'HTML -->
 </head>
 <body>
     <header>
@@ -23,21 +23,28 @@
     </main>
     <section id="film">
         <h2>Film</h2>
-        <p>inserire film</p>
+        <p>Inserisci il titolo di un film per cercarlo:</p>
         <div>
-            <input type="text" id="searchInput" placeholder="Inserisci il titolo del film">
+            <!-- Cambiato l'ID da "s" a "searchInput" -->
+            <input type="text" id="searchInput" placeholder="Inserire titolo del film">
             <button onclick="searchMovie()">Cerca</button>    
         </div>
+        <div id="movie"></div>
     </section>
     <section id="serietv">
         <h2>Serie TV</h2>
-        <p>inserire serietv</p>
+        <p>Inserire serie TV</p>
+        <div>
+            <input type="text" id="searchSeriesInput" placeholder="Inserire titolo della serie TV">
+            <button onclick="searchSeries()">Cerca</button>  
+        </div>
+        <div id="series"></div>
     </section>
     <footer id="informazioni">
         <h2>Informazioni</h2>
         <p>Questa è una libreria di film e serie TV dove puoi esplorare i nostri titoli e trovare informazioni sui tuoi film preferiti.</p>
         <p>&copy; 2023 Movies Library. Tutti i diritti riservati.</p>
-        <p>Contattaci: <a href="mailto:film&seriescatalog@gmail.com">film&seriescatalog@gmail.com</a>
+        <p>Contattaci: <a href="mailto:film&seriescatalog@gmail.com">film&seriescatalog@gmail.com</a></p>
     </footer>
 </body>
 </html>
